@@ -17,16 +17,14 @@ struct AppHomeView: View {
             VStack {
                 MapView()
                     .frame(height: UIScreen.main.bounds.height / 4)
-                    .padding(16)
 
                 TextField("Search city", text: $searchInput)
-                    .frame(height: 20.0)
-                    .padding(DesignSystem.Spacing.small.rawValue)
+                    .padding(DesignSystem.Spacing.medium.value)
                     .background(Color(.systemGray6))
-                    .cornerRadius(8)
-                    .padding(.horizontal)
-                    .offset(y: -30)
-                    .padding(.bottom, -46)
+                    .cornerRadius(DesignSystem.Radius.medium.value)
+                    .padding(.horizontal, DesignSystem.Spacing.large.rawValue)
+                    .offset(y: -35)
+                    .padding(.bottom, -50)
 
                 CitiesListView()
                 Spacer()

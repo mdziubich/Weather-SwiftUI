@@ -10,5 +10,9 @@ extension DesignSystem {
         case small = 8.0
         case medium = 16.0
         case large = 32.0
+
+        var value: CGFloat {
+            self.rawValue
+        }
     }
 }
