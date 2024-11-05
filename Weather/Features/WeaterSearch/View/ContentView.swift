@@ -30,7 +30,7 @@ struct ContentView: View {
                 CitiesListView()
                 Spacer()
             }
-            .background(Color.purple)
+            .background(DesignSystem.Color.backgroundPrimary.value)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
