@@ -21,7 +21,7 @@ struct AppHomeView: View {
 
                 TextField("Search city", text: $searchInput)
                     .frame(height: 20.0)
-                    .padding(DesignSystem.Padding.defaultValue.rawValue)
+                    .padding(DesignSystem.Spacing.small.rawValue)
                     .background(Color(.systemGray6))
                     .cornerRadius(8)
                     .padding(.horizontal)

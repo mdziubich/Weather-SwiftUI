@@ -9,6 +9,8 @@ import SwiftUI
 
 extension DesignSystem {
 
+    // This code was inspired by the article:
+    // https://atlassian.design/foundations/color
     enum Color: String {
 
         // MARK: - Content
