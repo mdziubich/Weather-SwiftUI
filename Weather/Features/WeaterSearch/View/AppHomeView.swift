@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct AppHomeView: View {
 
     @State private var searchInput: String = ""
 
@@ -17,10 +17,11 @@ struct ContentView: View {
             VStack {
                 MapView()
                     .frame(height: UIScreen.main.bounds.height / 4)
+                    .padding(16)
 
                 TextField("Search city", text: $searchInput)
                     .frame(height: 20.0)
-                    .padding(16)
+                    .padding(DesignSystem.Padding.defaultValue.rawValue)
                     .background(Color(.systemGray6))
                     .cornerRadius(8)
                     .padding(.horizontal)
@@ -47,5 +48,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    AppHomeView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }
